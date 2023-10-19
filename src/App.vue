@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <TopComp />
+    <SecondComp/>
+    <ThirdComp/>
+    <MapComp/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TopComp from './components/TopComp/index.vue'
+import SecondComp from './components/SecondComp/index.vue'
+import ThirdComp from './components/ThirdComp/index.vue'
+import MapComp from './components/MapComp/index.vue'
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    TopComp,
+    SecondComp,
+    ThirdComp,
+    MapComp
   }
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss" scoped>
+.app{
+  padding: 20px;
 }
 </style>

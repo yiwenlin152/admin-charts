@@ -1,0 +1,7 @@
+/* 公共样式 */
+html, body{
+    background-color: #eee;
+}
+*{
+    box-sizing: border-box;
+}
